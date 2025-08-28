@@ -1,0 +1,16 @@
+@import "./scss/bootstrap";
+@import "./scss/auth";
+@import "./scss/hero";
+@import "./scss/mens";
+@import "./scss/subscribe";
+
+
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1 0 auto;
+}

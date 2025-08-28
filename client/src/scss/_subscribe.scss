@@ -1,0 +1,13 @@
+.ima {
+  background-image: url("../assets/website/orange-pattern.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.backdrop {
+  backdrop-filter: blur(5px);
+}

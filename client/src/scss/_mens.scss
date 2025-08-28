@@ -1,0 +1,60 @@
+.yellow-button {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: #000 !important;
+}
+.yellow-button:hover {
+  background-color: $primary-light !important;
+  border-color: $primary-light !important;
+  color: #000 !important;
+}
+
+    .shirt {
+  .card {
+    border-radius: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    .card-body {
+      position: relative;
+      z-index: 2;
+      transition: color 0.3s ease;
+    }
+
+    img {
+      transition: transform 0.4s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: black;
+      z-index: 0;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+    }
+
+    &:hover {
+      color: white;
+
+      img {
+        transform: translateY(-30px); // Adjust for your desired lift
+      }
+
+      &::before {
+        opacity: 1;
+      }
+
+      .card-body {
+        color: white;
+      }
+    }
+  }
+}
+
